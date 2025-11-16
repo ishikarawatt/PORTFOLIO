@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ishika's E-Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased leading-normal tracking-wide">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-header bg-gray-900 shadow-lg py-3">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold rounded-md px-3 py-2 hover:bg-gray-700 transition-colors duration-300">
+                🌸 Ishika's E-Portfolio
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">HOME</a>
+                <a href="about.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">ABOUT</a>
+                <a href="assignments.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">ASSIGNMENTS</a>
+                <a href="project.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">PROJECTS</a>
+               
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button-about" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu-about" class="hidden md:hidden bg-gray-800 py-2 mt-2">
+            <a href="index.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">HOME</a>
+            <a href="about.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">ABOUT</a>
+            <a href="assignments.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">ASSIGNMENTS</a>
+            <a href="projetcs.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">PROJECTS</a>
+           
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+
+        <!-- Page Header -->
+        <header class="text-center py-8 mb-10 bg-white shadow-lg rounded-xl">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-800 mb-2">
+                About Me
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600">
+                Ishika | B.Tech 3rd-Semester Student
+            </p>
+        </header>
+
+        <!-- About Me Content Section -->
+        <section class="bg-white p-6 sm:p-10 rounded-2xl shadow-xl mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-4 pb-3 border-emerald-300 flex items-center">
+                My Journey So Far <span class="ml-3 text-emerald-600">📚</span>
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Hello! I'm Ishika Rawat, currently pursuing my B.Tech and navigating through my 3rd semester. My academic journey is fueled by a profound curiosity for computer science, technology, engineering principles and a drive to apply theoretical knowledge to practical challenges. This e-portfolio, a key part of my English subject assignment, is a dynamic reflection of my learning experiences and growth.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Throughout this semester, I've engaged with various subjects, honing my skills in problem-solving, analytical thinking, coding in Python,C and CPP. I am particularly keen on exploring data structures, building responsive web applications, understanding operating systems and UI/UX.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                This platform is designed to showcase my dedication and the tangible outcomes of my efforts, including assignments, presentations, and a dedicated video project. I believe in a holistic approach to education, combining rigorous academic study with practical application and continuous self-improvement.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 border-b pb-2 border-blue-200">
+                My Goals <span class="ml-2 text-blue-600">🎯</span>
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li>To consistently improve my technical and communication skills.</li>
+                <li>To apply theoretical knowledge to solve real-world problems.</li>
+                <li>To collaborate on innovative projects and expand my network.</li>
+                <li>To deepen my understanding of UI.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-gray-900 mt-10 mb-4 border-b pb-2 border-purple-200">
+                Skills & Interests <span class="ml-2 text-purple-600">💡</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 ml-4">
+                <div>
+                    <h4 class="font-medium mb-1">Technical Skills:</h4>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Programming Language 1- C++</li>
+                        <li>Programming Language 2 - Python</li>
+                        <li>Programming Language 2 - C</li>
+                        <li>Web Technologies - HTML, CSS, JavaScript</li>
+                        <li>Tools/Software - Git, VS Code</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-1">Interests:</h4>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Web Development</li>
+                        <li>Competitive Programming</li>
+                        <li>Learning New Technologies</li>
+                        <li>Technical Writing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Consistent across pages) -->
+        <footer class="text-center text-gray-600 text-sm mt-12 py-6 border-t border-gray-300 bg-white rounded-xl shadow-inner">
+            &copy; 2025 Ishu. All rights reserved. Made with <i class="fas fa-heart text-red-500 mx-1"></i> and <a href="https://tailwindcss.com/" target="_blank" class="text-blue-500 hover:underline">Tailwind CSS</a>.
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button-about').addEventListener('click', function() {
+            document.getElementById('mobile-menu-about').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

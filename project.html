@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ishu's E-Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        /* Custom card hover effect */
+        .project-card {
+            transition: all 0.3s ease-in-out;
+            background-size: 200% auto;
+            background-image: linear-gradient(to right, #ffffff 0%, #f0f9ff 50%, #ffffff 100%);
+        }
+        .project-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* More pronounced shadow */
+            transform: translateY(-5px) scale(1.02);
+            background-position: right center;
+        }
+        /* Gradient button hover effect */
+        .gradient-button {
+            background-image: linear-gradient(to right, #4CAF50 0%, #66BB6A 51%, #4CAF50 100%);
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .gradient-button:hover {
+            background-position: right center; /* change the direction of the change on hover */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 antialiased leading-normal tracking-wide">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-header bg-gray-900 shadow-lg py-3">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold rounded-md px-3 py-2 hover:bg-gray-700 transition-colors duration-300">
+                🌸 Ishu's E-Portfolio
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">HOME</a>
+                <a href="about.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">ABOUT</a>
+                <a href="assignments.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">ASSIGNMENTS</a>
+                <a href="project.html" class="text-white hover:text-emerald-200 text-lg font-medium px-3 py-2 rounded-md transition-colors duration-300">PROJECTS</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button-projects" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu-projects" class="hidden md:hidden bg-gray-800 py-2 mt-2">
+                       <a href="index.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">HOME</a>
+            <a href="about.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">ABOUT</a>
+            <a href="assignments.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">ASSIGNMENTS</a>
+            <a href="projetcs.html" class="block text-white px-4 py-2 text-md hover:bg-gray-700">PROJECTS</a>
+    
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+
+        <!-- Page Header -->
+        <header class="text-center py-8 mb-10 bg-white shadow-lg rounded-xl">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-800 mb-2">
+                My Projects
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600">
+                A showcase of my major projects and practical applications of my skills. ✨
+            </p>
+        </header>
+
+        <!-- Projects Grid -->
+        <section id="projects-list" class="bg-white p-6 sm:p-10 rounded-2xl shadow-xl mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-4 pb-3 border-emerald-300 flex items-center">
+                Featured Projects <span class="ml-3 text-emerald-600">🚀</span>
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+                Here you'll find a selection of my passion projects, demonstrating my technical skills and problem-solving abilities. Each project reflects a unique challenge and solution I've built.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Project 1: Hostel Management System (C Language) -->
+                <div class="project-card bg-blue-50 p-6 rounded-lg shadow-md border border-blue-200 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div class="mb-4 flex justify-center">
+                        <img src="https://placehold.co/100x100/e0e7ff/4338ca?text=C" alt="C Language Icon" class="rounded-full shadow-md">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-700 mb-3 flex items-center justify-center text-center"><i class="fas fa-building mr-3"></i> Hostel Management System (C)</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            A console-based comprehensive system designed to streamline hostel operations, including student registration, room allocation, fee management, and visitor tracking. Developed using **C language** to provide efficient data handling and management.
+                        </p>
+                        <h4 class="font-semibold text-gray-800 mt-4 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
+                            <li>Student Registration & Profile Management</li>
+                            <li>Room Allocation & Availability Check</li>
+                            <li>Fee Calculation & Payment Tracking</li>
+                            <li>Visitor Entry/Exit Logging</li>
+                            <li>Basic Reporting Functionality</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="https://github.com/yourusername/hostel-management-system-c" target="_blank" class="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 text-center">
+                            <i class="fas fa-file-code mr-2"></i> View Code on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Live College Bus Tracking Website -->
+                <div class="project-card bg-purple-50 p-6 rounded-lg shadow-md border border-purple-200 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div class="mb-4 flex justify-center">
+                        <img src="https://placehold.co/100x100/ede9fe/6d28d9?text=WEB" alt="Web Development Icon" class="rounded-full shadow-md">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-700 mb-3 flex items-center justify-center text-center"><i class="fas fa-bus-alt mr-3"></i> Live College Bus Tracking Website</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            A web-based application providing real-time tracking of college buses, enabling students and faculty to monitor bus locations and estimated arrival times. Enhances convenience and safety for commuters.
+                        </p>
+                        <h4 class="font-semibold text-gray-800 mt-4 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
+                            <li>Real-time Bus Location Display (Google Maps Integration)</li>
+                            <li>Estimated Time of Arrival (ETA) for Stops</li>
+                            <li>User-friendly Interface for Students & Admins</li>
+                            <li>Route Visualization</li>
+                            <li>Responsive Design for Mobile Access</li>
+                        </ul>
+                        <h4 class="font-semibold text-gray-800 mt-4 mb-2">Technologies Used:</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Google Maps API</li>
+                            <li>[Backend Technology, e.g., Node.js/Express, Python/Flask]</li>
+                            <li>[Database, e.g., MongoDB, PostgreSQL]</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-4 justify-center">
+                        <a href="https://github.com/yourusername/college-bus-tracking" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-900 transform hover:scale-105 transition-all duration-300 text-center">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                        <a href="https://your-bus-tracking-demo.com" target="_blank" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 text-center">
+                            <i class="fas fa-desktop mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer (Consistent across pages) -->
+        <footer class="text-center text-gray-600 text-sm mt-12 py-6 border-t border-gray-300 bg-white rounded-xl shadow-inner">
+            &copy; 2025 Ishu. All rights reserved. Made with <i class="fas fa-heart text-red-500 mx-1"></i> and <a href="https://tailwindcss.com/" target="_blank" class="text-blue-500 hover:underline">Tailwind CSS</a>.
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button-projects').addEventListener('click', function() {
+            document.getElementById('mobile-menu-projects').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
